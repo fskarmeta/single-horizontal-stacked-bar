@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+    <title>Single Stacked Horizontal Bar by Fabián Skármeta</title>
+</head>
+
+<body>
+
+    <div id="bar-container">
+        <div id="bar">
+            <div id="platform-fee" class="part"></div>
+            <div id="exchange-cost" class="part"></div>
+            <div id="processing-cost" class="part"></div>
+            <div id="amount-organization" class="part">
+                <span id="money-to-organization"></span>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <form>
+        <label>Platform Fee</label><br>
+        <input type="text" id="platform-fee-input"><br>
+        <label>Exchange Cost</label><br>
+        <input type="text" id="exchange-cost-input"><br>
+        <label>Processing Cost</label><br>
+        <input type="text" id="processing-cost-input"><br>
+        <label>Amount to Organization</label><br>
+        <input type="text" id="amount-organization-input"><br>
+        <br>
+        <input type="submit" id="submit">
+    </form>
+    <br>
+    <h1>Total:
+        <span id="showTotal"></span>
+    </h1>
+    <br><br>
+    <form>
+        <label>Bar Height in PX</label><br>
+        <input type="text" id="bar-height"><br>
+        <label>Bar Width in PX</label><br>
+        <input type="text" id="bar-width"><br>
+        <br>
+        <input type="submit" id="submitBarStyle">
+    </form>
+
+</body>
+
+</html>
