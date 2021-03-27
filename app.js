@@ -135,7 +135,7 @@ function validate(string) {
     if (string.includes(',')) {
         throw Error('Please use dot instead of commas')
     }
-    if (isNaN(parseInt(string))) {
+    if (isNaN(+string)) {
         throw Error(`${string} is not a number`)
     }
     return true
